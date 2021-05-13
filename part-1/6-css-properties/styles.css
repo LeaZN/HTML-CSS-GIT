@@ -17,3 +17,7 @@ font-weight: bold;
 .message.message--unread {
 border-left: 2px solid blue;
 }
+
+.message__content {
+    line-height: 2.5rem;
+}
