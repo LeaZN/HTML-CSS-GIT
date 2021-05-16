@@ -2,7 +2,7 @@
 a {
 color: red;
 text-decoration: none;
-font-weight: bold;
+font-weight: bold; 
 }
 .message__time {
     font-size: 0.9rem;
