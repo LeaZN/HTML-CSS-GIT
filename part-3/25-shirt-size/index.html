@@ -17,7 +17,9 @@
           <table class="shopping-basket__items">
             <tr>
               <th>Product</th>
-              <th>Size</th>
+              
+                <th>Size</th>
+                 
               <th>Units</th>
               <th>Price</th>
             </tr>
@@ -28,9 +30,21 @@
                   <p>Codi t-shirt, black</p>
                 </div>
               </td>
+
+              
               <td>
-                Medium
+                <form>
+                <label for="size" class="screenreader"> 
+                Choose a size</label>
+                <select id="size" name="size">
+                  <option value="small">Small</option>
+                  <option value="Medium" selected="selected">Medium</option>
+                  <option value="Large">Large</option>
+                  </select>
+                </form>
+                  
               </td>
+             
               <td>
                 1
               </td>
