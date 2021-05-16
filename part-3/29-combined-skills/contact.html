@@ -12,8 +12,10 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <nav>
+      <header class="site-header">
         <div class="site-header__title">C.Y.F</div>
+       
         <div class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
@@ -48,7 +50,9 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
+      </nav>
+      
 
       <main>
         <h1>Contact Us</h1>
@@ -56,14 +60,34 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required/>
+          </div>
+          <div class="email_field">
+            <label for="email">Your Email</label>
+         <input type="email" name="email" id="email" required/>
+
+
           </div>
           <div class="contact-form__field">
+            <label for="message">Message</label>
             <textarea
-              name="message"
-              placeholder="Your message should not be longer than 200 words."
+              name="message" id="message"
+              placeholder="Your message should not be longer than 200 words." required
             ></textarea>
           </div>
+          <fieldset>
+         <legend>What branch are you insterested in?</legend>
+         
+         <input type="radio" id="London" name="branch" value="London"/>
+         <label for="London">London</label>
+         
+         <input type="radio" id="Glasgow" name="branch" value="Glasgow"/>
+         <label for="Glasgow">Glasgow</label>
+         
+         <input type="radio" id="Manchester" name="branch" value="Manchester"/>
+         <label for="Manchester">Manchester</label>
+
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </main>
@@ -74,7 +98,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="heart">♥ </span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg
